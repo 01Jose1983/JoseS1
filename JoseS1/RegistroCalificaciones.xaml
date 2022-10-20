@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JoseS1.RegistroCalificaciones">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="CALIFICACIONES!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="PARCIAL 1"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Ingrese Nota Seguimiento" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNota1" Placeholder="Nota Seguimiento" Keyboard="Numeric"  Grid.Row="0" Grid.Column="1"/>
+                <!-- TextChanged="txtSeguimiento_TextChanged"/-->
+                
+                <Label Text="Ingrese Nota Examen" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtExamen1" Placeholder=" Nota Examen" Keyboard="Numeric"  Grid.Row="1" Grid.Column="1" />
+
+                <Label Text="Parcial" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtParcial" Placeholder="Nota Parcial final"  Grid.Row="3" Grid.Column="1"/>
+                <!-- Keyboard="Numeric"/-->
+            </Grid>
+
+            <Button x:Name="btnCalcularParcial" Text="Calcular Parcial" Clicked="btnCalcularParcial_Clicked"/>
+
+            <Label Text="  PARCIAL 2"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Ingrese Nota Seguimiento" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNota2" Placeholder="Nota Seguimiento" Keyboard="Numeric"  Grid.Row="0" Grid.Column="1" /> 
+                <!-- TextChanged="txtSeguimiento_TextChanged"/-->
+
+                <Label Text="Ingrese Nota Examen" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtExamen2" Placeholder=" Nota Examen" Keyboard="Numeric"  Grid.Row="1" Grid.Column="1" />
+
+                <Label Text="Parcial" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtParcia2" Placeholder="Nota Parcial final"  Grid.Row="3" Grid.Column="1"/>
+                <!-- Keyboard="Numeric"/-->
+            </Grid>
+
+            <Button x:Name="btnCalcularParcial2" Text="Calcular Parcial 2" Clicked="btnCalcularParcial2_Clicked"/>
+
+            <Button x:Name="btnEstado" Text="Verificar Estado" Clicked="btnEstado_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
