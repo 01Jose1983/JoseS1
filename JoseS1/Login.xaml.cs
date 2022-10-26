@@ -17,17 +17,19 @@ namespace JoseS1
             InitializeComponent();
         }
 
-        private void btnIniciar_Clicked(object sender, EventArgs e)
+        private async void btnIniciar_Clicked(object sender, EventArgs e)
+            
         {
-            string usuario = "jose";
-            string contrasena= "1";
+            await Navigation.PushAsync(new RegistroCalificaciones(txtUsuario.Text));
+            string usuario = "estudiante2022";
+            string contrasena= "uisrael2022";
 
             string tUsuario = txtUsuario.Text;
             string tContrasena = txtContraseña.Text;
             if(usuario == tUsuario && contrasena ==tContrasena)
             {
                 DisplayAlert("Alerta", "USUARIO CORRECTO", "Cerrar");
-                Navigation.PushAsync(new RegistroCalificaciones());
+                Navigation.PushAsync(new RegistroCalificaciones(usuario));
             }
             else
             {

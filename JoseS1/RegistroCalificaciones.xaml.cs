@@ -20,10 +20,10 @@ namespace JoseS1
         double parcial2;
         double nfinal;
 
-        public RegistroCalificaciones()
+        public RegistroCalificaciones(string usuario)
         {
             InitializeComponent();
-            //lblUsuario.Text = "El usuario conectado es: " + usuario;
+            lblUsuario.Text = "El usuario conectado es: " + usuario;
         }
        
         public void calcular()
