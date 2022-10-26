@@ -7,6 +7,7 @@
             <Label Text="CALIFICACIONES!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="lblUsuario" Text="." HorizontalTextAlignment="End" FontSize="14"/>
             <Label Text="PARCIAL 1"/>
 
             <Grid>

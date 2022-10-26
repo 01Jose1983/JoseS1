@@ -23,6 +23,7 @@ namespace JoseS1
         public RegistroCalificaciones()
         {
             InitializeComponent();
+            //lblUsuario.Text = "El usuario conectado es: " + usuario;
         }
        
         public void calcular()

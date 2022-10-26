@@ -17,9 +17,11 @@ namespace JoseS1
             InitializeComponent();
         }
 
-        private void btnIngresar_Clicked(object sender, EventArgs e)
+        private async void btnIngresar_Clicked(object sender, EventArgs e)
         {
+            await Navigation.PushAsync(new Registro(txtUsuario.Text));
 
+            
         }
     }
 }

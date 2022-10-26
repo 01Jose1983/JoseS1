@@ -10,7 +10,7 @@ namespace JoseS1
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Login());//habilita la navegacion
+            MainPage = new NavigationPage(new Login1());//habilita la navegacion
         }
 
         protected override void OnStart()

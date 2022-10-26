@@ -12,9 +12,10 @@ namespace JoseS1
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Registro : ContentPage
     {
-        public Registro( string usuario)
+        public Registro(string usuario) //string usuario
         {
             InitializeComponent();
+            lblUsuario.Text = "El usuario conectado es: " + usuario;
 
         }
 

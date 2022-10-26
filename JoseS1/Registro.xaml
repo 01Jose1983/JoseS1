@@ -4,6 +4,8 @@
              x:Class="JoseS1.Registro">
     <ContentPage.Content>
         <StackLayout >
+            <Label x:Name="lblUsuario" Text="." HorizontalTextAlignment="End" FontSize="14"/>
+            
             <Label Text="Ventana de Registro!"
                HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Large" BackgroundColor="Green"/>
                             
